@@ -1,0 +1,220 @@
+.image{
+    background-image: url("un.png");
+    min-height: 600px;
+    width: auto;
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+ul{
+    padding: 0;
+    margin: 0 25% 0 0;
+    list-style: none;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    width: 40%;
+    display: block;
+    padding: 30px 40px;
+    text-decoration: none;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323B60;
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+.active{
+    background: rgb(207, 205, 208);
+    border-radius: 10px;
+}
+li a:hover{
+    font-size: 20px;
+    color: #b0b6cf;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+@keyframes movingt{
+    from {margin-right: 20px;}
+    to {margin-right: 50px;}
+}
+@keyframes movings{
+    from {margin-right: 20px;}
+    to {margin-right: 80px;}
+}
+#title{
+    color: #fff;
+    margin-top: 100px;
+    margin-right: 50px;
+    font-size: 70px;
+    animation-name: movingt;
+    animation-duration: 1s;
+}
+
+#subtitle{
+    color: #fff;
+    margin-right: 80px;
+    font-size: 20px; 
+    animation-name: movings;
+    animation-duration: 1s;
+    animation-delay: 10ms;  
+}
+
+#sub{
+    min-height: 300px;
+    margin-top: 0%;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.search-form{
+    padding-top: 2.5%;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin-right: 34%;
+}
+
+button.search{
+    float: right;
+    background-color: #b0b6cf;
+    font-size: 21.5px;
+    border: none;
+    padding: 0.25%;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Home page */
+
+@keyframes expand{
+    from{width: 0;}
+    to{width: 50%;}
+}
+.home-hr{
+    width: 50%;
+    height: 3px;
+    background-color:  #323B60;
+    border-radius: 20px;
+    animation-name: expand;
+    animation-duration: 2s;
+}
+
+.home-div1{
+    margin-right: 5%;
+    margin-bottom: 50px;
+    width: 50%;
+    float: right;
+}
+/* university page */
+
+div.polaroid {
+    width: 19%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 20px;
+    float: right;
+    margin-right: 8%;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+  
+div.container {
+    padding: 10px;
+}
+/* colleges */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 15px;
+    font-family: 'El Messiri', sans-serif;
+}
+active, .collapsible:hover {
+    background-color: #ccc;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #faf8f8;
+    text-align: right;
+}
+
+.table  {
+    border-style:solid;
+    box-shadow: 2px 2px 2px grey;
+    border-width:3px;
+}
+.t{
+    padding: 9px;
+}
+  
+
+/* GPA Page */
+.input-gpa{
+    font-size: 14px;
+    font-family: 'El Messiri', sans-serif;
+    padding: 0.5%;
+    width: 30%;
+    border-radius: 5px;
+    margin: 2%;
+    border: none;
+}
+
+.submit-gpa{
+    color: #eee;
+    font-size: 14px;
+    font-family: 'El Messiri', sans-serif;
+    padding: 0.5%;
+    width: 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #5c687a;
+}
+
+.submit-gpa:hover{
+    background-color: #b0b6cf;
+}
+/* About Page */
+.about-div{
+    width: 65%;
+    height: 50%;
+    background-color: rgba(192,192,192,0.4);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 18%;
+    padding: 2%;
+    border-radius: 10px;
+}  

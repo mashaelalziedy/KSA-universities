@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://css.gg/css?=|ereader" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title> حساب المعدل</title>
+  <div class="image">
+    <div class="logo">
+      <a href="index.html"><img src="static\logo.svg"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="universities.html">الجامعات</a></li>
+        <li><a class="active" href="gpa.html">حساب المعدل</a></li>
+        <li style="margin-right: 25%;"><a href="about.html">حول</a></li>
+      </ul>
+    </nav>
+    <h1 id="title">حساب النسبة الموزونة </h1>
+    <p id="subtitle"> النسبة المعتمدة للقبول في الجامعات السعودية هي النسبة الموزونة<br /> وهنا يمكنك حساب موزونتك.. </p>
+  </div>
+</head>
+<body>
+  <hr class="home-hr"/>
+  <div style="text-align: center;" class="about-div">
+    <h4>حساب النسبة الموزونة</h4>
+    <form style="border: ridge; border-radius: 5px; ">
+      <input id="hs" class="input-gpa" type="number" placeholder=" المعدل التراكمي للثانوية العامة" name="highSchool">
+      <br />
+      <input id="apt" class="input-gpa" type="number" placeholder="درجة القدرات العامة" name="aptitude">
+      <br />
+      <input id="ach" class="input-gpa" type="number" placeholder="درجة الاختبار التحصيلي" name="achive">
+      <br />
+      <input class="submit-gpa" type="button" value="حساب النسبة" onclick="gpa_calc()">
+      <input class="submit-gpa" type="reset" value="إعادة">
+      <p id="result"></p>
+    </form>
+  </div>
+  <center>
+    <hr style="margin-top: 10%; " />
+    <div style="display: inline-block;">
+     <span><p style="color: rgb(174, 174, 174);">Made by Nusaibah, Mashael and Amira for CS471 Project <i class="gg-ereader" style="float: right;"></i> </p></span>
+   </div>
+  </center>
+  <script src="web.js"></script>
+</body>
+</html>
